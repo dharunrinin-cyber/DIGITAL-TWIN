@@ -1,0 +1,10 @@
+RECOVERY DIGITAL TWIN PROTOTYPE
+|
+|-- index.html
+|-- style.css
+|-- app.js
+|-- README.md
+|-- PROJECT_STRUCTURE.txt
+`-- assets
+    |-- reference_concept.jpg
+    `-- reference_track.jpg

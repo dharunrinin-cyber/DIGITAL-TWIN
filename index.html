@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d1110" />
+  <title>Recovery Digital Twin — AI Personalized Recovery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="toast" class="toast"></div>
+
+  <!-- DOMAIN SELECTION -->
+  <section id="landing" class="screen landing-screen">
+    <header class="landing-header">
+      <div class="brand-mark">R</div>
+      <div>
+        <div class="brand-name">RECOVERY<span>AI</span></div>
+        <div class="brand-sub">Personalized Post-Operative Care</div>
+      </div>
+      <button class="ghost-btn" id="demoBtn">Demo</button>
+    </header>
+
+    <main class="track-wrap">
+      <div class="eyebrow">AI HEALTH INNOVATION PLATFORM</div>
+      <h1>Choose Your<br/><span>Hackathon Domain</span></h1>
+      <p class="landing-copy">Explore a patient-first digital twin that learns from recovery data and continuously adapts rehabilitation plans.</p>
+
+      <div class="track-card">
+        <div class="track-top">
+          <span class="track-pill">TRACK 06 / 10</span>
+          <span class="live-dot">● LIVE CONCEPT</span>
+        </div>
+        <h2>Recovery Digital Twin</h2>
+        <p class="track-description">A dynamic digital twin that models a patient's post-operative recovery trajectory to predict complications and optimize rehabilitation plans.</p>
+
+        <div class="focus-title">KEY FOCUS AREAS</div>
+        <div class="focus-list">
+          <div><span>▸</span> Model post-op recovery trajectory day by day</div>
+          <div><span>▸</span> Flag early warning signs of complications</div>
+          <div><span>▸</span> Personalize rehab plans in real time</div>
+        </div>
+
+        <div class="chips">
+          <span>Digital Twin</span><span>Rehab</span><span>Predictive AI</span>
+        </div>
+
+        <button class="primary-cta" id="startBtn">OPEN PROTOTYPE <span>→</span></button>
+      </div>
+
+      <div class="carousel">
+        <button class="circle-btn" id="prevBtn">‹</button>
+        <div class="dots" aria-label="track progress">
+          <i></i><i></i><i></i><i></i><i></i><i class="active"></i><i></i><i></i><i></i><i></i>
+        </div>
+        <button class="circle-btn" id="nextBtn">›</button>
+      </div>
+      <div class="counter">06 / 10</div>
+    </main>
+  </section>
+
+  <!-- APPLICATION -->
+  <section id="app" class="screen app-screen hidden">
+    <aside class="sidebar">
+      <div class="side-brand"><div class="brand-mark">R</div><strong>RECOVERY<span>AI</span></strong></div>
+      <nav>
+        <button class="nav-item active" data-view="overview"><span>⌂</span> Overview</button>
+        <button class="nav-item" data-view="twin"><span>◈</span> Digital Twin</button>
+        <button class="nav-item" data-view="plan"><span>✓</span> Recovery Plan</button>
+        <button class="nav-item" data-view="monitor"><span>♡</span> Live Monitoring</button>
+        <button class="nav-item" data-view="travel"><span>✈</span> Travel Readiness</button>
+        <button class="nav-item" data-view="doctor"><span>▣</span> Doctor Dashboard</button>
+      </nav>
+      <div class="side-footer">
+        <div class="secure">● SECURE SESSION</div>
+        <small>Prototype v1.0</small>
+      </div>
+    </aside>
+
+    <div class="main-area">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <div>
+          <div class="top-title" id="pageTitle">Recovery Overview</div>
+          <div class="top-sub">Tuesday · 24 May 2025 · Patient ID MTG23456</div>
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn" id="bellBtn">🔔<span class="notif"></span></button>
+          <div class="avatar">AK</div>
+        </div>
+      </header>
+
+      <main class="content">
+        <!-- OVERVIEW -->
+        <div class="view active-view" id="overview">
+          <div class="hero-row">
+            <div>
+              <div class="eyebrow">PATIENT DIGITAL TWIN</div>
+              <h1>Good morning, Ahmed.</h1>
+              <p class="muted">Your AI recovery model is stable. Keep following today's plan.</p>
+            </div>
+            <button class="outline-btn" id="doctorMessage">Message Doctor</button>
+          </div>
+
+          <div class="metric-grid">
+            <div class="metric-card accent">
+              <div class="metric-label">Recovery Score</div>
+              <div class="metric-value">91<span>/100</span></div>
+              <div class="progress"><b style="width:91%"></b></div>
+              <div class="trend up">↑ 8% this week</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Travel Readiness</div>
+              <div class="metric-value">93<span>%</span></div>
+              <div class="progress"><b style="width:93%"></b></div>
+              <div class="trend up">Safe-to-fly threshold: 85%</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Recovery Day</div>
+              <div class="metric-value">14<span>/21</span></div>
+              <div class="progress"><b style="width:67%"></b></div>
+              <div class="trend">Next milestone: travel check</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Risk Level</div>
+              <div class="metric-value low">LOW</div>
+              <div class="risk-ring">✓</div>
+              <div class="trend">No active warning signs</div>
+            </div>
+          </div>
+
+          <div class="two-col">
+            <section class="panel">
+              <div class="panel-head">
+                <div><h3>Today's Recovery Plan</h3><p>AI-personalized · 24 May</p></div>
+                <button class="text-btn" data-goto="plan">View full plan →</button>
+              </div>
+              <div class="task-list">
+                <div class="task done"><span class="task-icon">💊</span><div><b>Medicine</b><small>2 / 3 completed · Next 2:00 PM</small></div><strong>67%</strong></div>
+                <div class="task done"><span class="task-icon">🚶</span><div><b>Walk</b><small>15 / 20 minutes</small></div><strong>75%</strong></div>
+                <div class="task"><span class="task-icon">💧</span><div><b>Water</b><small>2.1 / 3 litres</small></div><strong>70%</strong></div>
+                <div class="task"><span class="task-icon">🏃</span><div><b>Exercise</b><small>10 / 15 minutes</small></div><strong>66%</strong></div>
+                <div class="task done"><span class="task-icon">🌙</span><div><b>Sleep</b><small>7.2 / 8 hours</small></div><strong>90%</strong></div>
+              </div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-head">
+                <div><h3>Recovery Score Progress</h3><p>Digital twin trajectory</p></div>
+                <span class="badge green">ON TRACK</span>
+              </div>
+              <div class="chart">
+                <div class="ylabels"><span>100</span><span>75</span><span>50</span><span>25</span><span>0</span></div>
+                <svg viewBox="0 0 560 220" preserveAspectRatio="none">
+                  <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a8ff35" stop-opacity=".28"/><stop offset="1" stop-color="#a8ff35" stop-opacity="0"/></linearGradient></defs>
+                  <path d="M25 178 L130 148 L235 122 L340 85 L445 60 L535 28 L535 210 L25 210Z" fill="url(#area)"/>
+                  <path d="M25 178 L130 148 L235 122 L340 85 L445 60 L535 28" fill="none" stroke="#b4ff3c" stroke-width="4"/>
+                  <circle cx="25" cy="178" r="6"/><circle cx="130" cy="148" r="6"/><circle cx="235" cy="122" r="6"/><circle cx="340" cy="85" r="6"/><circle cx="445" cy="60" r="6"/><circle cx="535" cy="28" r="7"/>
+                </svg>
+                <div class="xlabels"><span>Day 1</span><span>Day 3</span><span>Day 7</span><span>Day 10</span><span>Day 12</span><span>Day 14</span></div>
+              </div>
+              <div class="score-row"><b>91</b><span>Current model confidence <strong>94%</strong></span></div>
+            </section>
+          </div>
+
+          <section class="panel journey-panel">
+            <div class="panel-head"><div><h3>Patient Journey</h3><p>From surgery to safe travel</p></div></div>
+            <div class="journey">
+              <div class="journey-step done"><span>🏥</span><b>Surgery</b><small>10 May</small></div>
+              <i>→</i>
+              <div class="journey-step done"><span>🤖</span><b>AI Twin</b><small>Created</small></div>
+              <i>→</i>
+              <div class="journey-step done"><span>📋</span><b>Daily Plan</b><small>14 days</small></div>
+              <i>→</i>
+              <div class="journey-step done"><span>📈</span><b>Recovery</b><small>91/100</small></div>
+              <i>→</i>
+              <div class="journey-step active"><span>✈️</span><b>Travel</b><small>Ready</small></div>
+            </div>
+          </section>
+        </div>
+
+        <!-- DIGITAL TWIN -->
+        <div class="view" id="twin">
+          <div class="hero-row">
+            <div><div class="eyebrow">PREDICTIVE AI</div><h1>Recovery Digital Twin</h1><p class="muted">A living model of Ahmed's post-operative recovery trajectory.</p></div>
+            <span class="badge green big">MODEL STABLE</span>
+          </div>
+          <div class="twin-grid">
+            <section class="panel twin-visual">
+              <div class="panel-head"><div><h3>Current Patient State</h3><p>Updated 2 minutes ago</p></div><span class="pulse">● LIVE</span></div>
+              <div class="body-model">
+                <div class="body-glow"></div><div class="human">♟</div>
+                <div class="callout c1">❤️ Heart rate<br><b>74 BPM</b></div>
+                <div class="callout c2">🫁 SpO₂<br><b>98%</b></div>
+                <div class="callout c3">🦵 Mobility<br><b>Good</b></div>
+                <div class="callout c4">🩹 Wound<br><b>Stable</b></div>
+              </div>
+            </section>
+            <section class="panel">
+              <div class="panel-head"><div><h3>7-Day AI Forecast</h3><p>Predicted trajectory</p></div></div>
+              <div class="forecast">
+                <div><span>Day 15</span><b>92</b><i>Stable</i></div>
+                <div><span>Day 16</span><b>93</b><i>Stable</i></div>
+                <div><span>Day 17</span><b>94</b><i>Improving</i></div>
+                <div><span>Day 18</span><b>95</b><i>Improving</i></div>
+                <div><span>Day 19</span><b>96</b><i>Travel window</i></div>
+                <div><span>Day 20</span><b>97</b><i>Optimal</i></div>
+              </div>
+              <div class="ai-note"><b>AI insight</b><p>Maintaining current activity and hydration is predicted to reduce recovery delay risk by 18%.</p></div>
+            </section>
+          </div>
+          <div class="metric-grid">
+            <div class="metric-card"><div class="metric-label">Complication Risk</div><div class="metric-value low">4.2<span>%</span></div><div class="trend up">↓ 2.8% vs yesterday</div></div>
+            <div class="metric-card"><div class="metric-label">Rehab Adherence</div><div class="metric-value">88<span>%</span></div><div class="progress"><b style="width:88%"></b></div></div>
+            <div class="metric-card"><div class="metric-label">Model Confidence</div><div class="metric-value">94<span>%</span></div><div class="progress"><b style="width:94%"></b></div></div>
+            <div class="metric-card"><div class="metric-label">Next Prediction</div><div class="metric-value">19<span> May</span></div><div class="trend">Travel window opens</div></div>
+          </div>
+        </div>
+
+        <!-- PLAN -->
+        <div class="view" id="plan">
+          <div class="hero-row">
+            <div><div class="eyebrow">AI-GENERATED CARE PLAN</div><h1>Daily Personalized Recovery Plan</h1><p class="muted">The plan adapts to your vitals, mobility, symptoms and doctor notes.</p></div>
+            <button class="primary-small" id="simulateUpdate">Run AI Update</button>
+          </div>
+          <div class="day-tabs"><button class="active">DAY 1</button><button>DAY 3</button><button>DAY 7</button><button>DAY 14</button></div>
+          <section class="panel plan-panel">
+            <div class="plan-header"><div><h2>DAY 14 <span>Current</span></h2><p>Post-operative knee replacement recovery</p></div><div class="safe-pill">✓ SAFE TO FLY</div></div>
+            <div class="plan-items">
+              <div class="plan-item"><span>💊</span><div><b>Medicine</b><small>As prescribed by doctor</small></div><button class="check-btn done-check">✓</button></div>
+              <div class="plan-item"><span>🚶</span><div><b>Walk</b><small>30 minutes · moderate pace</small></div><button class="check-btn" data-task="walk">○</button></div>
+              <div class="plan-item"><span>🧘</span><div><b>Physiotherapy</b><small>20 minutes · knee mobility exercises</small></div><button class="check-btn" data-task="physio">○</button></div>
+              <div class="plan-item"><span>💧</span><div><b>Water</b><small>3 litres throughout the day</small></div><button class="check-btn" data-task="water">○</button></div>
+              <div class="plan-item"><span>🥗</span><div><b>Food</b><small>Normal balanced diet · protein-rich</small></div><button class="check-btn" data-task="food">○</button></div>
+              <div class="plan-item"><span>🌙</span><div><b>Sleep</b><small>8 hours · consistent sleep window</small></div><button class="check-btn" data-task="sleep">○</button></div>
+            </div>
+          </section>
+        </div>
+
+        <!-- MONITOR -->
+        <div class="view" id="monitor">
+          <div class="hero-row"><div><div class="eyebrow">WEARABLE + PATIENT INPUTS</div><h1>Live Health Monitoring</h1><p class="muted">Sensor data is continuously fed into the digital twin.</p></div><span class="pulse">● LIVE NOW</span></div>
+          <div class="monitor-grid">
+            <div class="vital panel"><span>❤️</span><small>Heart Rate</small><strong>74 <em>BPM</em></strong><div class="spark">▁▂▃▂▅▇</div><label>Normal range</label></div>
+            <div class="vital panel"><span>🫁</span><small>SpO₂</small><strong>98 <em>%</em></strong><div class="spark">▃▄▃▅▆▅</div><label>Excellent</label></div>
+            <div class="vital panel"><span>👣</span><small>Steps</small><strong>6,842</strong><div class="spark">▂▃▅▆▇▆</div><label>Goal: 8,000</label></div>
+            <div class="vital panel"><span>🌙</span><small>Sleep</small><strong>7.2 <em>hrs</em></strong><div class="spark">▇▆▅▆▇▇</div><label>Goal: 8 hrs</label></div>
+            <div class="vital panel"><span>🙂</span><small>Pain Level</small><strong>2 <em>/10</em></strong><div class="spark">▇▅▃▂▂▂</div><label>Improving</label></div>
+            <div class="vital panel"><span>🌡️</span><small>Temperature</small><strong>98.4 <em>°F</em></strong><div class="spark">▃▃▄▃▃▂</div><label>Stable</label></div>
+          </div>
+          <section class="panel">
+            <div class="panel-head"><div><h3>Early Warning Monitor</h3><p>AI checks incoming data against personalized baseline.</p></div><span class="badge green">NO ALERTS</span></div>
+            <div class="alert-row safe"><span>✓</span><div><b>No abnormal pattern detected</b><small>Vitals are within your personalized recovery range.</small></div><time>2 min ago</time></div>
+            <div class="alert-row"><span>✓</span><div><b>Mobility trend improving</b><small>Walking duration increased by 12% this week.</small></div><time>Today</time></div>
+          </section>
+        </div>
+
+        <!-- TRAVEL -->
+        <div class="view" id="travel">
+          <div class="hero-row"><div><div class="eyebrow">AI TRAVEL DECISION SUPPORT</div><h1>Travel Readiness</h1><p class="muted">A readiness score combines recovery, vitals, mobility, medications and doctor clearance.</p></div></div>
+          <div class="travel-grid">
+            <section class="panel readiness">
+              <div class="gauge"><div><strong>93%</strong><span>READY</span></div></div>
+              <h2>Safe to Fly</h2><p>Based on current recovery trajectory and available clinical inputs.</p>
+              <div class="threshold"><span>Minimum safe threshold</span><b>85%</b></div>
+            </section>
+            <section class="panel">
+              <div class="panel-head"><div><h3>Readiness Factors</h3><p>AI explanation for today's score</p></div></div>
+              <div class="factor"><span>Recovery score</span><b>91/100</b><i><u style="width:91%"></u></i></div>
+              <div class="factor"><span>Mobility</span><b>92%</b><i><u style="width:92%"></u></i></div>
+              <div class="factor"><span>Vitals stability</span><b>98%</b><i><u style="width:98%"></u></i></div>
+              <div class="factor"><span>Medication adherence</span><b>89%</b><i><u style="width:89%"></u></i></div>
+              <div class="factor"><span>Doctor clearance</span><b>95%</b><i><u style="width:95%"></u></i></div>
+            </section>
+          </div>
+          <section class="panel tips">
+            <h3>AI Tips Before Travel</h3>
+            <div class="tip-grid"><div>✈️ <b>Move every 60–90 min</b><small>Short walking breaks during travel.</small></div><div>💧 <b>Stay hydrated</b><small>Carry water and follow your intake target.</small></div><div>💊 <b>Keep medicines accessible</b><small>Carry prescribed medication in hand luggage.</small></div><div>🩺 <b>Keep doctor contact ready</b><small>Digital recovery passport stores key details.</small></div></div>
+          </section>
+        </div>
+
+        <!-- DOCTOR -->
+        <div class="view" id="doctor">
+          <div class="hero-row"><div><div class="eyebrow">CLINICAL VIEW</div><h1>Doctor Dashboard</h1><p class="muted">A concise view of the patient's AI-assisted recovery state.</p></div><button class="primary-small" id="videoBtn">Start Video Call</button></div>
+          <section class="patient-banner panel"><div class="doctor-avatar">AK</div><div><h2>Ahmed Khan</h2><p>Patient ID: MTG23456 · Knee Replacement · Surgery: 10 May 2025</p></div><div class="doctor-stats"><b>91<small>Recovery</small></b><b>93%<small>Travel</small></b><b>4.2%<small>Risk</small></b></div></section>
+          <div class="two-col">
+            <section class="panel"><div class="panel-head"><div><h3>Today's Plan Progress</h3><p>Patient adherence</p></div><span class="badge green">GOOD</span></div><div class="doctor-progress"><div><span>Medicine</span><b>2/3</b><i><u style="width:67%"></u></i></div><div><span>Walk</span><b>15/20 min</b><i><u style="width:75%"></u></i></div><div><span>Water</span><b>2.1/3 L</b><i><u style="width:70%"></u></i></div><div><span>Exercise</span><b>10/15 min</b><i><u style="width:66%"></u></i></div></div></section>
+            <section class="panel"><div class="panel-head"><div><h3>Vitals Trend</h3><p>Last 7 days</p></div></div><div class="mini-chart"><span style="height:45%"></span><span style="height:55%"></span><span style="height:48%"></span><span style="height:70%"></span><span style="height:62%"></span><span style="height:78%"></span><span style="height:90%"></span></div></section>
+          </div>
+          <div class="doctor-actions"><button id="approveBtn">✓ Approve Travel</button><button id="updatePlanBtn">Update Plan</button><button id="messageBtn">Message Patient</button></div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <button class="close" id="closeModal">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
